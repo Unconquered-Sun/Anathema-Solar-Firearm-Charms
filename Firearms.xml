@@ -1,0 +1,120 @@
+<charmlist xmlns="http://anathema.sourceforge.net/charms">
+	
+	<!-- Solar Firearm Charms -->
+	<charm id="Solar.HeavensEyeMarksmanship" exalt="Solar" group="SolarFirearmCharms">
+
+		<prerequisite>
+			<trait id="Archery" value="2" />
+			<trait id="MartialArts" value="1" />
+			<essence value="2" />
+		</prerequisite>
+		
+		<cost>
+			<essence cost="3" text="m"/>
+		</cost>
+
+		<duration duration="Instant" />
+
+		<charmtype type="Supplemental" />
+		
+		<charmAttribute attribute="Celestial" />
+		<charmAttribute attribute="Combo-OK" visualize="true" />
+		<charmAttribute attribute="Mirror" visualize="true" />
+
+
+		<source source="Custom" />
+	</charm>
+
+	<charm id="Solar.EveryAnglePerfection" exalt="Solar" group="SolarFirearmCharms">
+
+		<prerequisite>
+			<trait id="Archery" value="4" />
+			<trait id="MartialArts" value="1" />
+			<essence value="3" />
+			<charmReference id="Solar.HeavensEyeMarksmanship" />
+		</prerequisite>
+		
+		<cost>
+			<essence cost="6" text="m"/>
+		</cost>
+
+		<duration duration="Instant" />
+
+		<charmtype type="Supplemental" />
+		
+		<charmAttribute attribute="Celestial" />
+		<charmAttribute attribute="Combo-OK" visualize="true" />
+		<charmAttribute attribute="Mirror" visualize="true" />
+
+		<source source="Custom" />
+	</charm>
+
+	<charm id="Solar.LightningReload" exalt="Solar" group="SolarFirearmCharms">
+
+		<prerequisite>
+			<trait id="Archery" value="2" />
+			<trait id="MartialArts" value="1" />
+			<essence value="2" />
+		</prerequisite>
+		
+		<cost>
+			<essence cost="" text="- (1m)"/>
+		</cost>
+
+		<duration duration="Permanent" />
+
+		<charmtype type="Permanent" />
+		
+		<charmAttribute attribute="Celestial" />
+
+		<source source="Custom" />
+	</charm>
+
+	<charm id="Solar.FlawlessQuickDraw" exalt="Solar" group="SolarFirearmCharms">
+
+		<prerequisite>
+			<trait id="Archery" value="3" />
+			<trait id="MartialArts" value="1" />
+			<essence value="2" />
+			<charmReference id="Solar.LightningReload" />
+		</prerequisite>
+		
+		<cost>
+			<essence cost="0" text=""/>
+		</cost>
+
+		<duration duration="Permanent" />
+
+		<charmtype type="Permanent" />
+		
+		<charmAttribute attribute="Celestial" />
+		<charmAttribute attribute="Mirror" visualize="true" />
+
+		<source source="Custom" />
+	</charm>
+
+	<charm id="Solar.SplitSecondEvasion" exalt="Solar" group="SolarFirearmCharms">
+
+		<prerequisite>
+			<trait id="Archery" value="4" />
+			<trait id="MartialArts" value="1" />
+			<essence value="4" />
+			<charmReference id="Solar.FlawlessQuickDraw" />
+		</prerequisite>
+		
+		<cost>
+			<essence cost="10" text="m"/>
+		</cost>
+
+		<duration duration="Instant" />
+
+		<charmtype type="Reflexive" />
+		
+		<charmAttribute attribute="Celestial" />
+		<charmAttribute attribute="Combo-OK" visualize="true" />
+		<charmAttribute attribute="Mirror" visualize="true" />
+
+		<source source="Custom" />
+	</charm>
+
+</charmlist>
